@@ -14,20 +14,27 @@
 
         "skills": {
           "angular":    { "category": "Frameworks", "rank": 4, "label": "Angular JS 1.x"  },
-          "bash":       { "category": "Systems",    "rank": 4, "label": "Shell Scripting" },
+          "bash":       { "category": "Systems",    "rank": 5, "label": "Shell Scripting" },
           "browserify": { "category": "Frameworks", "rank": 3, "label": "Browserify"      },
-          "csharp":     { "category": "Languages",  "rank": 5, "label": "C#"              },
-          "docker":     { "category": "Systems",    "rank": 3, "label": "Docker"          },
+          "cassandra":  { "category": "Databases",  "rank": 3, "label": "Cassandra"       },
+          "csharp":     { "category": "Languages",  "rank": 3, "label": "C#"              },
+          "crossfilter":{ "category": "Frameworks", "rank": 5, "label": "Crossfilter"     },
+          "d3":         { "category": "Frameworks", "rank": 3, "label": "D3 v4"           },
+          "docker":     { "category": "Systems",    "rank": 4, "label": "Docker"          },
           "dotnetmvc":  { "category": "Frameworks", "rank": 2, "label": ".NET MVC 4"      },
-          "jquery":     { "category": "Frameworks", "rank": 4, "label": "jQuery"          },
+          "jquery":     { "category": "Frameworks", "rank": 3, "label": "jQuery"          },
           "linux":      { "category": "Systems",    "rank": 4, "label": "Linux"           },
-          "mysql":      { "category": "Databases",  "rank": 3, "label": "MySQL"           },
-          "php5":       { "category": "Languages",  "rank": 4, "label": "PHP5"            },
+          "mysql":      { "category": "Databases",  "rank": 2, "label": "MySQL"           },
+          "php5":       { "category": "Languages",  "rank": 3, "label": "PHP5"            },
           "java":       { "category": "Languages",  "rank": 3, "label": "Java"            },
           "javascript": { "category": "Languages",  "rank": 5, "label": "JavaScript"      },
-          "postgres":   { "category": "Databases",  "rank": 3, "label": "PostgreSQL"      },
-          "sql08":      { "category": "Databases",  "rank": 5, "label": "SQL Server 2008" },
-          "ssas08":     { "category": "Databases",  "rank": 5, "label": "SSAS 2008"       },
+          "postgres":   { "category": "Databases",  "rank": 4, "label": "PostgreSQL"      },
+          "react":      { "category": "Frameworks", "rank": 4, "label": "ReactJS"         },
+          "spark":      { "category": "Frameworks", "rank": 1, "label": "Spark"           },
+          "storm":      { "category": "Frameworks", "rank": 1, "label": "Storm"           },
+          "sql08":      { "category": "Databases",  "rank": 3, "label": "SQL Server 2008" },
+          "ssas08":     { "category": "Databases",  "rank": 3, "label": "SSAS 2008"       },
+          "typescript": { "category": "Languages",  "rank": 5, "label": "Typescript"      },
           "winsrv":     { "category": "Systems",    "rank": 1, "label": "Windows Server"  }
         },
 
@@ -42,17 +49,44 @@
 
         "work": [
           {
-            "company": "SalesforceIQ (formerly RelateIQ)",
-            "position": "Senior Member of Technical Staff",
+            "company": "Salesforce via RelateIQ Acquisition",
+            "position": "Senior Engineering Manager; Lead Member of Technical Staff",
             "positions": [
               {
-                "startDate": "Jun 2014",
+                "team": "Activity Insights (Management)",
+                "startDate": "Aug 2017",
                 "endDate": null,
+                "skills": [ "spark", "storm", "cassandra" ],
+                "highlights": [
+                  "Manage a team of backend engineers and work closely with the Product team to drive the roadmap",
+                  "Organize development of a near-real-time Spark pipeline to process millions of E-mails per hour",
+                  "Review, coordinate, and oversee designs for supporting APIs with multiple other teams and stakeholders",
+                  "Provide visibility into the Activity Insights project via internal presentations and conference talks"
+                ]
+              },
+
+              {
+                "team": "Activity Insights (Engineering)",
+                "startDate": "June 2016",
+                "endDate": "Aug 2017",
+                "skills": [ "react", "typescript", "d3", "crossfilter" ],
+                "highlights": [
+                  "Developed a highly-interactive web-based activity exploration tool",
+                  "Utilized D3 to create a highly animated and visually appealing experience",
+                  "Created a Javascript-based query language and supporting tooling for querying activity datasets",
+                  "Drove product and design decisions around all aspects of the tool"
+                ]
+              },
+
+              {
+                "team": "SalesforceIQ Front-End Team (formerly RelateIQ)",
+                "startDate": "Jun 2014",
+                "endDate": "Sept 2017",
                 "skills": [ "angular", "bash", "docker", "java" ],
                 "highlights": [
-                  "Designed and implemented the front-end of the in-app reporting suite",
+                  "Designed and implemented the front-end for the RelateIQ reporting suite",
                   "Implemented a headless testing docker container with xvfb and Firefox",
-                  "Removed gulp (and with it, several dependencies) and reduced the build down to a simple shell script",
+                  "Removed gulp (and several dependencies) and reduced the build down to a simple shell script",
                   "Dockerized the build environment; removing the need to involve devops when requirements change"
                 ]
               }
@@ -122,6 +156,24 @@
           },
 
           {
+            "company": "Microsoft Corporation",
+            "position": "Intern: Software Developer in Test",
+            "positions": [
+              {
+                "startDate": "May 2007",
+                "endDate": "Jun 2007",
+                "skills": [ "csharp" ],
+                "highlights": [
+                  "Built a scrum management and organization system for the Expression Web team",
+                  "Found and reported multiple bugs with the ASP.net AJAX Toolkit library"
+                ]
+              }
+            ]
+          },
+        ],
+
+        "previousWork": [
+          {
             "company": "Rensselaer Center for Open-Source Software",
             "position": "Undergraduate Research",
             "positions": [
@@ -137,23 +189,6 @@
               }
             ]
           },
-
-          {
-            "company": "Microsoft Corporation",
-            "position": "Intern: Software Developer in Test",
-            "positions": [
-              {
-                "startDate": "May 2007",
-                "endDate": "Jun 2007",
-                "skills": [ "csharp" ],
-                "highlights": [
-                  "Built a scrum management and organization system for the Expression Web team",
-                  "Found and reported multiple bugs with the ASP.net AJAX Toolkit library"
-                ]
-              }
-            ]
-          },
-
           {
             "company": "Detroit Country Day School",
             "position": "Systems Design and Implementation",
@@ -454,7 +489,7 @@
           <h1 class="skill-category-name" bind="$.name"></h1>
 
           <ul class="skill-category-skills">
-            <li bind-each="$.values">
+            <li bind-each="$.values.slice(0, 6)">
               <span bind="$.label"></span>
             </li>
           </ul>
